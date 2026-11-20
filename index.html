@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A5K</title>
+<meta name="description" content="A5K is an independent studio making watch faces for Wear OS and games for Android. Home of Apollo Chrono.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<style>
+  :root {
+    --bg: #faf7f1;
+    --text: #22201c;
+    --muted: #6b645a;
+    --accent: #9a6216;
+    --rule: #e4ddd0;
+    --card: #f1ebe0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121110;
+      --text: #ece6db;
+      --muted: #a0978a;
+      --accent: #dcaa5c;
+      --rule: #2c2823;
+      --card: #1c1a17;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 800; font-size: 22px; letter-spacing: .06em; color: var(--text); text-decoration: none; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 15px; }
+  nav a:hover { color: var(--accent); }
+  .hero { padding: 48px 0 56px; }
+  .hero h1 { font: normal 44px/1.15 Georgia, "Times New Roman", serif; margin: 0 0 16px; max-width: 14em; }
+  .hero p { color: var(--muted); font-size: 19px; margin: 0; max-width: 34em; }
+  section { padding: 48px 0; border-top: 1px solid var(--rule); }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+  h2 { font: normal 32px/1.2 Georgia, "Times New Roman", serif; margin: 0 0 12px; }
+  .lede { color: var(--muted); max-width: 38em; margin: 0 0 32px; }
+  .faces { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 28px 20px; list-style: none; padding: 0; margin: 0 0 36px; }
+  .faces li { text-align: center; }
+  .faces img { width: 100%; max-width: 160px; aspect-ratio: 1; display: block; margin: 0 auto 10px; }
+  .faces span { font-size: 14px; color: var(--muted); }
+  .collections { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border-radius: 8px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .status { display: inline-block; margin-top: 28px; font-size: 14px; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; padding: 6px 14px; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); padding: 28px 0 40px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+  @media (max-width: 560px) {
+    .hero h1 { font-size: 34px; }
+    nav a { margin-left: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="/">A5K</a>
+    <nav>
+      <a href="#apollo-chrono">Watch faces</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Small things, made with care.</h1>
+    <p>A5K is an independent studio making watch faces for Wear OS and games for Android.</p>
+  </div>
+
+  <section id="apollo-chrono">
+    <p class="eyebrow">Wear OS watch faces</p>
+    <h2>Apollo Chrono</h2>
+    <p class="lede">Twenty-four watch faces, each built around an idea: a medieval miniature that turns from day to night, an owl whose eyes tell the time, an orrery, a dive dial, a sky that clears as you walk.</p>
+
+    <ul class="faces">
+      <li><img src="img/book-of-hours.webp" alt="Book of Hours watch face" loading="lazy"><span>Book of Hours</span></li>
+      <li><img src="img/night-owl.webp" alt="Night Owl watch face" loading="lazy"><span>Night Owl</span></li>
+      <li><img src="img/lighthouse.webp" alt="Lighthouse Keeper watch face" loading="lazy"><span>Lighthouse Keeper</span></li>
+      <li><img src="img/garden-hours.webp" alt="Garden Hours watch face" loading="lazy"><span>Garden Hours</span></li>
+      <li><img src="img/circuit.webp" alt="Circuit watch face" loading="lazy"><span>Circuit</span></li>
+      <li><img src="img/mech.webp" alt="Mech watch face" loading="lazy"><span>Mech</span></li>
+      <li><img src="img/orbit.webp" alt="Orbit watch face" loading="lazy"><span>Orbit</span></li>
+      <li><img src="img/horizon.webp" alt="Horizon watch face" loading="lazy"><span>Horizon</span></li>
+      <li><img src="img/vitals-aquarium.webp" alt="Aquarium watch face" loading="lazy"><span>Aquarium</span></li>
+      <li><img src="img/vitals-constellation.webp" alt="Constellation watch face" loading="lazy"><span>Constellation</span></li>
+      <li><img src="img/vitals-bodyweather-barometer.webp" alt="Bodyweather Barometer watch face" loading="lazy"><span>Bodyweather Barometer</span></li>
+      <li><img src="img/zodiac.webp" alt="Zodiac watch face" loading="lazy"><span>Zodiac</span></li>
+    </ul>
+
+    <div class="collections">
+      <div class="card"><h3>Told Time</h3><p>Illustrated faces that tell a small story as the day goes by.</p></div>
+      <div class="card"><h3>Inner Workings</h3><p>Circuits, movements, maps and machines, with the time inside.</p></div>
+      <div class="card"><h3>Vitals</h3><p>Faces that respond to your steps and heart rate.</p></div>
+      <div class="card"><h3>Zodiac</h3><p>The twelve animals of the Chinese zodiac.</p></div>
+    </div>
+
+    <span class="status">Coming soon to Google Play</span>
+  </section>
+
+  <section id="games">
+    <p class="eyebrow">Android</p>
+    <h2>Games</h2>
+    <p class="lede">In development. More here soon.</p>
+  </section>
+
+  <section id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Get in touch</h2>
+    <p class="lede">Questions, support or feedback: <a href="mailto:support@a5k.tech">support@a5k.tech</a></p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 A5K</span>
+    <span><a href="https://apollo614.github.io/apollo-chrono-privacy/">Apollo Chrono privacy policy</a></span>
+  </footer>
+</div>
+</body>
+</html>
